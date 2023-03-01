@@ -1,0 +1,2 @@
+C:\Users\Mohammad\Desktop\mahsa-app\mahsa-app\obj\Debug\mahsa-app.esproj.SuggestedBindingRedirects.cache
+C:\Users\Mohammad\Desktop\mahsa-app\mahsa-app\obj\Debug\mahsa-app.esproj.CoreCompileInputs.cache
