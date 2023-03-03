@@ -9,7 +9,7 @@ function NavbarComponent() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">LOGO</Navbar.Brand>
+        <Navbar.Brand href="#home" className="nav-logo">LOGO</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
@@ -19,11 +19,11 @@ function NavbarComponent() {
               </InputGroup>
             </div>
 
-            <Nav.Link href="#home">Business</Nav.Link>
-            <Nav.Link href="#home">Explore</Nav.Link>
-            <Nav.Link href="#link">Log in</Nav.Link>
+            <Nav.Link className="nav-item" href="#home">Business</Nav.Link>
+            <Nav.Link className="nav-item" href="#home">Explore</Nav.Link>
+            <Nav.Link className="nav-item" href="#link">Log in</Nav.Link>
 
-            <Button variant="outline-success" size="sm">
+            <Button variant="outline-primary" className="nav-btn" size="sm">
               Sign Up
             </Button>
           </Nav>

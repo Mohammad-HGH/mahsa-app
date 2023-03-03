@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/*------------------------------------- font-family -----------------------------------------------*/
+
+
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+
+    src: url('../font/Inter-Medium.ttf') format('truetype')
+}
+
+
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+ol {
+    list-style-type: none;
+}
+
+/* or */
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 1rem;
+    position: relative;
+}
+
+h2 span {
+    background-color: white;
+    padding-right: 10px;
+}
+
+h2:after {
+    content: "";
+    position: absolute;
+    /* bottom: 0; */
+    left: 180px;
+    right: 0;
+    height: 0.5em;
+    border-top: 100px solid #4947A7;
+    z-index: -1;
+    top: -420px;
+}
+
+.swiper-wrapper {
+    gap: 2pc;
+}
+
+.footer-bg {
+    background: #F0F0F0;
+}
+
+.footer-ul {
+    padding-left: 0 !important;
+}
+
+.footer-head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFA33E;
+}
+
+.footer-ul>li>a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #666666;
+    text-decoration: none;
+
+}
+
+.footer-ul>li {
+    margin-top: 15px;
+}
+
+.nav-logo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #4947A7;
+}
+
+.nav-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #4947A7;
+}
+
+
+.slider-head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 90px;
+    /* or 129% */
+
+
+    color: #4947A7;
+}
+
+
+.slider-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #666666;
+}
+
+.li-items {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #666666;
+}
+
+.body-txt {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #666666;
+}
+
+
+.body-head {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 90px;
+    /* or 141% */
+
+
+    color: #4947A7;
+}
