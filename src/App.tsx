@@ -14,7 +14,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import secondImage from "./assets/img/image2.png";
 import thirdImage from "./assets/img/image3.png";
-import fourthImage from "./assets/img/image4.png";
+import clockImage from "./assets/img/clock.jpg";
+import laptopImage from "./assets/img/laptop_man.jpg";
+import tabletImage from "./assets/img/tablet.jpg";
 import "./assets/style/custom.css";
 import Footer from "./shared/Footer";
 
@@ -22,121 +24,304 @@ function App() {
   return (
     <div className="App">
       <NavbarComponent />
-      <div className="mb-5">
-        <Swiper slidesPerView={1} spaceBetween={0} pagination={true} modules={[Pagination]} className="mySwiper">
-          <SwiperSlide>
-            <div className="d-flex flex-row-reverse align-items-center">
-              <div>
-                <img src={firstImage} alt="" />
-              </div>
-              <div className="flex-column">
-                <h3 className="slider-head">Fire Up Your Business With Us</h3>
-                <p className="slider-txt">
-                  Are you one of the thousands of Iphone owners who has no idea.{" "}
-                </p>
+      <div className="container-fluid">
+        <div className="mb-5">
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={120}
+            pagination={true}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="d-flex flex-row-reverse align-items-center">
+                <div>
+                  <img src={firstImage} alt="" />
+                </div>
+                <div className="flex-column">
+                  <h3 className="slider-head">Fire Up Your Business With Us</h3>
+                  <p className="slider-txt">
+                    Are you one of the thousands of Iphone owners who has no
+                    idea.{" "}
+                  </p>
 
-                <InputGroup className="mb-3 mt-3">
-                  <InputGroup.Text
-                    style={{
-                      background: "transparent",
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faSearch} />
-                  </InputGroup.Text>
-                  <Form.Control
-                    aria-label="Last name"
-                    placeholder="Find services"
-                  />
-                  <InputGroup.Text>Search</InputGroup.Text>
-                </InputGroup>
+                  <InputGroup className="mb-3 mt-3 slider-input">
+                    <InputGroup.Text
+                      style={{
+                        background: "transparent",
+                        border: "unset",
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </InputGroup.Text>
+                    <Form.Control
+                      style={{
+                        border: "unset",
+                        padding: "12px",
+                      }}
+                      aria-label="Last name"
+                      placeholder="Find services"
+                    />
+                    <InputGroup.Text
+                      className="input-styles"
+                      style={{
+                        border: "unset",
+                        borderLeft: "3px solid #4947A7",
+                        background: "transparent",
+                      }}
+                    >
+                      Search
+                    </InputGroup.Text>
+                  </InputGroup>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="d-flex flex-row-reverse align-items-center">
-              <div>
-                <img src={firstImage} alt="" />
-              </div>
-              <div className="flex-column">
-                <h3 className="slider-head">Fire Up Your Business With Us</h3>
-                <p className="slider-txt">
-                  Are you one of the thousands of Iphone owners who has no idea.{" "}
-                </p>
+            </SwiperSlide>
 
-                <InputGroup className="mb-3 mt-3">
-                  <InputGroup.Text
-                    style={{
-                      background: "transparent",
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faSearch} />
-                  </InputGroup.Text>
-                  <Form.Control
-                    aria-label="Last name"
-                    placeholder="Find services"
-                  />
-                  <InputGroup.Text>Search</InputGroup.Text>
-                </InputGroup>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="d-flex flex-row-reverse align-items-center">
-              <div>
-                <img src={firstImage} alt="" />
-              </div>
-              <div className="flex-column">
-                <h3 className="slider-head">Fire Up Your Business With Us</h3>
-                <p className="slider-txt">
-                  Are you one of the thousands of Iphone owners who has no idea.{" "}
-                </p>
+            <SwiperSlide>
+              <div className="d-flex flex-row-reverse align-items-center">
+                <div>
+                  <img src={clockImage} alt="" />
+                </div>
+                <div className="flex-column">
+                  <h3 className="slider-head">Fire Up Your Business With Us</h3>
+                  <p className="slider-txt">
+                    Are you one of the thousands of Iphone owners who has no
+                    idea.{" "}
+                  </p>
 
-                <InputGroup className="mb-3 mt-3">
-                  <InputGroup.Text
-                    style={{
-                      background: "transparent",
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faSearch} />
-                  </InputGroup.Text>
-                  <Form.Control
-                    aria-label="Last name"
-                    placeholder="Find services"
-                  />
-                  <InputGroup.Text>Search</InputGroup.Text>
-                </InputGroup>
+                  <InputGroup className="mb-3 mt-3 slider-input">
+                    <InputGroup.Text
+                      style={{
+                        background: "transparent",
+                        border: "unset",
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </InputGroup.Text>
+                    <Form.Control
+                      style={{
+                        border: "unset",
+                        padding: "12px",
+                      }}
+                      aria-label="Last name"
+                      placeholder="Find services"
+                    />
+                    <InputGroup.Text
+                      className="input-styles"
+                      style={{
+                        border: "unset",
+                        borderLeft: "3px solid #4947A7",
+                        background: "transparent",
+                      }}
+                    >
+                      Search
+                    </InputGroup.Text>
+                  </InputGroup>
+                  <div className="d-flex flex-row w-100">
+                    <div>
+                      <button
+                        className="get-start"
+                        style={{ width: "max-content" }}
+                      >
+                        Get start
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        className="btn btn-custom"
+                        style={{ width: "max-content" }}
+                      >
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M40 24.5359C42.6667 26.0755 42.6667 29.9245 40 31.4641L25 40.1244C22.3333 41.664 19 39.7395 19 36.6603L19 19.3397C19 16.2605 22.3333 14.336 25 15.8756L40 24.5359Z"
+                            fill="#4947A7"
+                          />
+                          <circle
+                            cx="28"
+                            cy="28"
+                            r="26.5"
+                            stroke="#4947A7"
+                            stroke-width="3"
+                          />
+                        </svg>
+                        <span className="ps-2">Watch Demo</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="d-flex flex-row-reverse align-items-center">
-              <div>
-                <img src={firstImage} alt="" />
-              </div>
-              <div className="flex-column">
-                <h3 className="slider-head">Fire Up Your Business With Us</h3>
-                <p className="slider-txt">
-                  Are you one of the thousands of Iphone owners who has no idea.{" "}
-                </p>
+            </SwiperSlide>
 
-                <InputGroup className="mb-3 mt-3">
-                  <InputGroup.Text
-                    style={{
-                      background: "transparent",
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faSearch} />
-                  </InputGroup.Text>
-                  <Form.Control
-                    aria-label="Last name"
-                    placeholder="Find services"
-                  />
-                  <InputGroup.Text>Search</InputGroup.Text>
-                </InputGroup>
+            <SwiperSlide>
+              <div className="d-flex flex-row-reverse align-items-center">
+                <div>
+                  <img src={laptopImage} alt="" />
+                </div>
+                <div className="flex-column">
+                  <h3 className="slider-head">Fire Up Your Business With Us</h3>
+                  <p className="slider-txt">
+                    Are you one of the thousands of Iphone owners who has no
+                    idea.{" "}
+                  </p>
+
+                  <InputGroup className="mb-3 mt-3 slider-input">
+                    <InputGroup.Text
+                      style={{
+                        background: "transparent",
+                        border: "unset",
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </InputGroup.Text>
+                    <Form.Control
+                      style={{
+                        border: "unset",
+                        padding: "12px",
+                      }}
+                      aria-label="Last name"
+                      placeholder="Find services"
+                    />
+                    <InputGroup.Text
+                      className="input-styles"
+                      style={{
+                        border: "unset",
+                        borderLeft: "3px solid #4947A7",
+                        background: "transparent",
+                      }}
+                    >
+                      Search
+                    </InputGroup.Text>
+                  </InputGroup>
+
+                  <div className="d-flex flex-row w-100">
+                    <div>
+                      <button
+                        className="get-start"
+                        style={{ width: "max-content" }}
+                      >
+                        Get start
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        className="btn btn-custom"
+                        style={{ width: "max-content" }}
+                      >
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M40 24.5359C42.6667 26.0755 42.6667 29.9245 40 31.4641L25 40.1244C22.3333 41.664 19 39.7395 19 36.6603L19 19.3397C19 16.2605 22.3333 14.336 25 15.8756L40 24.5359Z"
+                            fill="#4947A7"
+                          />
+                          <circle
+                            cx="28"
+                            cy="28"
+                            r="26.5"
+                            stroke="#4947A7"
+                            stroke-width="3"
+                          />
+                        </svg>
+                        <span className="ps-2">Watch Demo</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="d-flex flex-row-reverse align-items-center">
+                <div>
+                  <img src={tabletImage} alt="" />
+                </div>
+                <div className="flex-column">
+                  <h3 className="slider-head">Fire Up Your Business With Us</h3>
+                  <p className="slider-txt">
+                    Are you one of the thousands of Iphone owners who has no
+                    idea.{" "}
+                  </p>
+
+                  <InputGroup className="mb-3 mt-3 slider-input">
+                    <InputGroup.Text
+                      style={{
+                        background: "transparent",
+                        border: "unset",
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faSearch} />
+                    </InputGroup.Text>
+                    <Form.Control
+                      style={{
+                        border: "unset",
+                        padding: "12px",
+                      }}
+                      aria-label="Last name"
+                      placeholder="Find services"
+                    />
+                    <InputGroup.Text
+                      className="input-styles"
+                      style={{
+                        border: "unset",
+                        borderLeft: "3px solid #4947A7",
+                        background: "transparent",
+                      }}
+                    >
+                      Search
+                    </InputGroup.Text>
+                  </InputGroup>
+                  <div className="d-flex flex-row w-100">
+                    <div>
+                      <button
+                        className="get-start"
+                        style={{ width: "max-content" }}
+                      >
+                        Get start
+                      </button>
+                    </div>
+                    <div>
+                      <button
+                        className="btn btn-custom"
+                        style={{ width: "max-content" }}
+                      >
+                        <svg
+                          width="56"
+                          height="56"
+                          viewBox="0 0 56 56"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M40 24.5359C42.6667 26.0755 42.6667 29.9245 40 31.4641L25 40.1244C22.3333 41.664 19 39.7395 19 36.6603L19 19.3397C19 16.2605 22.3333 14.336 25 15.8756L40 24.5359Z"
+                            fill="#4947A7"
+                          />
+                          <circle
+                            cx="28"
+                            cy="28"
+                            r="26.5"
+                            stroke="#4947A7"
+                            stroke-width="3"
+                          />
+                        </svg>
+                        <span className="ps-2">Watch Demo</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
 
       <div className="container">
@@ -155,7 +340,7 @@ function App() {
           </div>
         </div>
 
-        <div className="row pt-5">
+        <div className="row pt-5 pb-5">
           <div className="col-md-4 col-12 d-flex flex-column justify-content-center">
             <h3 className="body-head">Services</h3>
             <p className="body-txt">
@@ -172,9 +357,55 @@ function App() {
               pagination={{
                 clickable: true,
               }}
-              modules={[]}
+              navigation={true}
+              modules={[Navigation]}
               className="mySwiper"
             >
+              <div
+                className="position-absolute swiper-button-next"
+                style={{
+                  bottom: "20px",
+                  right: "250px",
+                  zIndex: 1,
+                }}
+              >
+                <svg
+                  width="72"
+                  height="72"
+                  viewBox="0 0 72 72"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="36" cy="36" r="36" fill="#4947A7" />
+                  <rect
+                    x="18"
+                    y="36"
+                    width="33"
+                    height="4"
+                    rx="2"
+                    fill="white"
+                  />
+                  <rect
+                    x="40.8281"
+                    y="26"
+                    width="17"
+                    height="4"
+                    rx="2"
+                    transform="rotate(45 40.8281 26)"
+                    fill="white"
+                  />
+                  <rect
+                    x="38"
+                    y="48.0215"
+                    width="17"
+                    height="4"
+                    rx="2"
+                    transform="rotate(-45 38 48.0215)"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+
               <h2>
                 <span></span>
               </h2>
@@ -549,15 +780,11 @@ function App() {
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-12">
+          <div className="col-md-6 col-12 d-flex align-items-center">
             <img src={thirdImage} className="img-fluid" alt="" />
           </div>
           <div className="col-md-6 col-12 d-flex- flex-column pb-5">
-            <h3 className="body-head">
-              Let’s build something
-              
-              great together
-            </h3>
+            <h3 className="body-head">Let’s build something great together</h3>
 
             <ul className="d-flex flex-column justify-space-between">
               <li className="d-flex flex-row pt-5">
@@ -590,7 +817,9 @@ function App() {
                     />
                   </svg>
                 </div>
-                <p className="ps-2 li-items">n publishing and graphic design.</p>
+                <p className="ps-2 li-items">
+                  n publishing and graphic design.
+                </p>
               </li>
               <li className="d-flex flex-row pt-5">
                 <div>
@@ -622,7 +851,9 @@ function App() {
                     />
                   </svg>
                 </div>
-                <p className="ps-2 li-items">n publishing and graphic design.</p>
+                <p className="ps-2 li-items">
+                  n publishing and graphic design.
+                </p>
               </li>
               <li className="d-flex flex-row pt-5">
                 <div>
@@ -654,13 +885,23 @@ function App() {
                     />
                   </svg>
                 </div>
-                <p className="ps-2 li-items">n publishing and graphic design.</p>
+                <p className="ps-2 li-items">
+                  n publishing and graphic design.
+                </p>
               </li>
             </ul>
           </div>
-
-          <div className="row pt-5">
-            <img src={fourthImage} alt="" className="img-fluid" />
+        </div>
+        <div className="row pt-5 bg-blue p-5">
+          <div className="col-md-8 col-12">
+            <h3 className="get-start-head pt-3 pb-3">Join the team</h3>
+            <p className="get-start-body">
+              n publishing and graphic design, Lorem ipsum is a placeholder text
+              commonly used to demonstrate.
+            </p>
+          </div>
+          <div className="col-md-4 col-12 d-flex flex-column justify-content-center">
+            <button className="get-start">Get start</button>
           </div>
         </div>
       </div>
